@@ -22,7 +22,7 @@
                <div class="card-meta">
                    Posted by <?php the_author(); ?> on <?php the_time('F j, Y') ?>
                    <?php if(get_post_type() == 'post') { ?>
-                    in <a href="#"><?php echo get_the_category_list(', ') ?></a>
+                    in&nbsp;<a href="#"><?php echo get_the_category_list(', ') ?></a>
                    <?php } ?>
                </div>
                <p>
@@ -41,10 +41,10 @@
                         <h3>Don't worry</h3>
                         <h3>Check out the following links:</h3>
                         <ul>
-                            <li><a href="<?php echo site_url('/blog')?>">Blog List</a></li>
-                            <li><a href="<?php echo site_url('/products')?>">Products</a></li>
-                            <li><a href="<?php echo site_url('/about')?>">About</a></li>
-                            <li><a href="<?php echo site_url('/')?>">Home Page</a></li>
+                            <li><a href="<?php echo site_url('/blog')?>">Tutorials</a></li>
+                            <!-- <li><a href="<?php echo site_url('/products')?>">Products</a></li> -->
+                            <!-- <li><a href="<?php echo site_url('/about')?>">About</a></li> -->
+                            <li><a href="<?php echo site_url('/')?>">Homepage</a></li>
                         </ul>
                     </div>
                    <?php } ?>

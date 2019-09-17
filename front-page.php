@@ -1,18 +1,19 @@
 <?php get_header(); ?>
    <div id="banner">
-      <h1>&lt;Bedsitter/&gt;</h1>
-      <h3>Learn coding from scratch</h3>
+      <h1>&lt;Bedsitter_iO/&gt;</h1>
+      <h3>When you learn, teach, </h3>
+      <h3>when you get, give.<h3>
    </div>
    <main>
       <a href="<?php echo site_url('/blog'); ?>">
-         <h2 class="section-heading">All Blogs</h2>
+         <h2 class="section-heading">Latest Tutorials</h2>
       </a>
       <section>
       <?php 
 
         $args = array(
             'post_type' => 'post',
-            'posts_per_page' => 2,
+            'posts_per_page' => 8,
         );
 
         $blogposts = new WP_Query($args);
@@ -40,7 +41,7 @@
     <?php }
         wp_reset_query(); ?>
       </section>
-      <h2 class="section-heading">All Projects</h2>
+      <!-- <h2 class="section-heading">All Projects</h2>
       <section>
       <?php 
         $args = array(
@@ -73,17 +74,12 @@
         <?php }
             wp_reset_query();
         ?>
-      </section>
+      </section> -->
       <h2 class="section-heading">Source Code</h2>
       <section id="section-source">
          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.
+            Source code for all the tutorials are a stored in the following Github organization/repository.
          </p>
-         <a href="#" class="btn-readmore">Github Profile</a>
+         <a href="https://github.com/bedsitter-io" class="btn-readmore">Bedsitter iO Github Repositories</a>
       </section>
     <?php get_footer(); ?>

@@ -83,7 +83,6 @@ textarea:focus {
     right: 0;
     top: 24px;
     width: 500px;
-    pointer-events: none;
     z-index: 50;
     transition: 0.4px;
 }
@@ -93,26 +92,39 @@ textarea:focus {
     width: 100%;
 }
 
-#searchbox #search-btn,
-#slideout-menu,
-#search-btn {
-    height: 48px;
-    width: 48px;
-    background: white url('/img/search-icon.png');
+#searchbox #search-btn {
+    background: white url(img/search-icon.png);
     background-position: center;
     background-repeat: no-repeat;
+    width: 48px;
+    height: 100%;
     position: absolute;
     right: 0;
     top: 0;
     box-shadow: initial;
-    transition: 0.4s;
     cursor: pointer;
-    border: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    transition: 0.4s;
+}
+
+#slideout-menu
+#search-btn {
+    background: white url(img/search-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-shadow: initial;
+    cursor: pointer;
+    border-left: 1px solid #ddd;
+    transition: 0.4s;
 }
 
 #searchbox #search-btn:hover,
-#slideout-menu,
-#search-btn:hover {
+#slideout-menu #search-btn:hover {
     background: red url('img/search-icon.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -211,7 +223,7 @@ nav ul {
     width: 100%;
     text-align: center;
     opacity: 0;
-    pointer-events: none;
+    pointer-events: auto !important;
 }
 
 #slideout-menu ul {

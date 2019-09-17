@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <h2 class="page-heading">All Blogs</h2>
+    <h2 class="page-heading">All Tutorials</h2>
       <section>
       <?php
 
@@ -18,8 +18,8 @@
                   <h3><?php echo the_title();?></h3>
                </a>
                <div class="card-meta">
-                   Posted by <?php the_author(); ?> on <?php the_time('F j, Y') ?> in
-                   <a href="#"><?php echo get_the_category_list(', ') ?></a>
+                   Posted by <?php the_author(); ?> on <?php the_time('F j, Y') ?>
+                   in&nbsp;<a href="#"><?php echo get_the_category_list(', ') ?></a>
                </div>
                <p>
                     <?php echo wp_trim_words(get_the_excerpt(), 36);?>

@@ -8,7 +8,7 @@
    
    <?php wp_head(); ?>
 
-   <title>Bedsitter Tech</title>
+   <title>Bedsitter iO</title>
 </head>
 
 <body>
@@ -18,14 +18,14 @@
             <a href="<?php echo site_url(''); ?>">Home</a>
          </li>
          <li>
-            <a href="<?php echo site_url('/blog'); ?>">Blog</a>
+            <a href="<?php echo site_url('/blog'); ?>">Tutorials</a>
          </li>
-         <li>
+         <!-- <li>
             <a href="<?php echo site_url('/products'); ?>">Shop</a>
-         </li>
-         <li>
+         </li> -->
+         <!-- <li>
             <a href="<?php echo site_url('/about'); ?>">About</a>
-         </li>
+         </li> -->
          <div class="searchbox-slide-menu">
              <?php echo get_search_form();?>
          </div>
@@ -34,11 +34,9 @@
    </div>
    <nav> 
       <div id="logo-img">
-         <!-- <a href="">
-               <img src="img/logo.img" alt="Bedsitter Logo">
-               </a> -->
-         <a href="<?php echo site_url(''); ?>">  
-         <h2>Bedsitter Tech Logo</h2>
+         <a href="<?php echo site_url(''); ?>">
+            <p>Bedsitter iO <sup>alpha</sup></p>
+         </a>
         </a>
       </div>
       <div id="menu-icon">
@@ -53,21 +51,21 @@
          <li>
             <a href="<?php echo site_url('/blog'); ?>"
                 <?php if(get_post_type() == 'post') echo 'class="active"'?>
-            >Blog</a>
+            >Tutorials</a>
          </li>
-         <li>
+         <!-- <li>
             <a href="<?php echo site_url('/products'); ?>"
                 <?php if(get_post_type() == 'product') echo 'class="active"'?>
             >Shop</a>
-         </li>
-         <li>
+         </li> -->
+         <!-- <li>
             <a href="<?php echo site_url('/about'); ?>"
                 <?php if(is_page('about') == 'post') echo 'class="active"'?>
             >About</a>
-         </li>
+         </li> -->
          <li>
             <div id="search-icon">
-               <i class="fas fa-search">Search</i>
+               <i class="fas fa-search"></i>
             </div>
          </li>
       </ul>
